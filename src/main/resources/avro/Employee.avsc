@@ -1,0 +1,33 @@
+{
+  "name": "Employee",
+  "type": "record",
+  "namespace": "com.example.avro",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "address",
+      "type": {
+        "type": "record",
+        "name": "Address",
+        "namespace": "com.example.avro",
+        "fields": [
+          {
+            "name": "street",
+            "type": "string"
+          },
+          {
+            "name": "city",
+            "type": "string"
+          },
+          {
+            "name": "postalCode",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}

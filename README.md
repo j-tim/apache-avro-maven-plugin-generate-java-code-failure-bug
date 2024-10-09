@@ -1,6 +1,7 @@
 # Avro Maven plugin 1.12.0 bug: Failed to generate Java classes from multiple .avsc files containing same record
 
 Simple Repository to reproduce a (possible) bug in the Apache Avro Maven plugin.
+Simple Repository to reproduce a (possible) bug in the Apache Avro Maven plugin.
 Failed to generate Java classes from multiple .avsc files containing same record
 
 > Caused by: org.apache.avro.SchemaParseException: Can't redefine: com.example.avro.Address
@@ -10,7 +11,7 @@ Affected Avro Maven plugin version: 1.12.0
 
 ## Description
 
-This issue look like [AVRO-3940](https://issues.apache.org/jira/browse/AVRO-3940), which is already resolved.
+This issue looks like [AVRO-3940](https://issues.apache.org/jira/browse/AVRO-3940) (already resolved)
 After upgrading from version `1.11.4` to version `1.12.0` of the plugin I run into the same error: `Caused by: org.apache.avro.SchemaParseException: Can't redefine: com.example.avro.Address` when generating Java classes from two .avsc files that both contain an identical `record` instead of an `enum`.
 
 Both Avro schemas define the `Address` record: 

@@ -22,7 +22,7 @@ Both Avro schemas define the `Address` record:
 
 ## Steps to reproduce
 
-1. Clone this repository: 
+1. Clone this repository: https://github.com/j-tim/apache-avro-maven-plugin-generate-java-code-failure-bug
 2. Build the Maven project
 
 ```bash

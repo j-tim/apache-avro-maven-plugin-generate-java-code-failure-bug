@@ -1,5 +1,7 @@
 # Avro Maven plugin 1.12.0 bug: Failed to generate Java classes from multiple .avsc files containing same record
 
+See issue: [AVRO-4076](https://issues.apache.org/jira/browse/AVRO-4076)
+
 Simple Repository to reproduce a (possible) bug in the Apache Avro Maven plugin.
 Simple Repository to reproduce a (possible) bug in the Apache Avro Maven plugin.
 Failed to generate Java classes from multiple .avsc files containing same record
